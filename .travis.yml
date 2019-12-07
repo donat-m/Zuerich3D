@@ -1,0 +1,8 @@
+language: objective-c
+osx_image: xcode61
+ram:
+- 2.1.2
+install:
+- ./install.sh
+script:
+- ./build.sh
