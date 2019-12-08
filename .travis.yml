@@ -1,5 +1,5 @@
 # do not install anything extra onto the image
-language: generic
+language: Objective-C
 
 # use a Mac OSX image
 os: osx
