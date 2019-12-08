@@ -21,15 +21,15 @@ before_install:
 
 # run the script to download and install Unity editor
 install:
-- sudo -E sh ./Scripts/install.sh
+- sudo -E sh ./install.sh
 
 # run the script for unit tests and builds
 script:
-- sudo -E sh ./Scripts/build.sh
+- sudo -E sh ./build.sh
 
 # run the script to upload the builds as tarballs
 after_success:
-- sudo -E sh ./Scripts/post_build.sh
+- sudo -E sh ./post_build.sh
 
 # environment variables used in bash scripts
 env:
