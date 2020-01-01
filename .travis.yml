@@ -9,3 +9,11 @@ install:
 - ./Scripts/install.sh
 script:
 - ./Scripts/build.sh
+deploy:
+  provider: s3
+  access_key_id: $ACCESS_KEY_ID
+  secret_access_key: $ACCESS_KEY
+  bucket: <YOUR S3 BUCKET>
+  local-dir: Build
+  upload-dir: <THE DIRECTORY IN THE BUCKET TO PUT BUILDS IN>
+  skip_cleanup: true
